@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Local Event Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Local Event Finder</h1>
+    </header>
+    <main>
+        <section class="filters">
+            <div class="filter-group">
+                <label for="category">Filter by Category:</label>
+                <select id="category">
+                    <option value="all">All</option>
+                    <option value="music">Music</option>
+                    <option value="arts">Arts</option>
+                    <option value="food">Food</option>
+                    <option value="technology">Technology</option>
+                    <option value="sports">Sports</option>
+                    <option value="community">Community</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="search">Search Events:</label>
+                <input type="text" id="search" placeholder="Search events...">
+            </div>
+        </section>
+        <section class="event-list" id="event-list">
+            <!-- Events will be dynamically inserted here -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Local Event Finder</p>
+    </footer>
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="event-details"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
